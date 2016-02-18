@@ -268,9 +268,10 @@
     }
     
     // Image is smaller than screen so no zooming!
-    if (xScale >= 1 && yScale >= 1) {
+    // zoom Image even when it is smaller than screen!
+    /*if (xScale >= 1 && yScale >= 1) {
         minScale = 1.0;
-    }
+    } */
     
     // Set min/max zoom
     self.maximumZoomScale = maxScale;
